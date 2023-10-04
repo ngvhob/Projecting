@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #fff;
+    --secondary-bg-color: #000000;
+    --main-text-color: #000000;
+    --secondary-text-color: #067382;
+    --border-color: #afafaf;
+    --input-bg-color: #f5f5f5;
+}
+
+/* FORM CONTAINER MAIN */
+.form--container{
+    position: relative;
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    width: 100%;
+}
+/* FORM ROW */
+.form--container .container, .form--container .container .row {
+    height: inherit;
+}
+/* FORM BODY */
+.form--body--col{
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+/* LOGO */
+#logo{
+    max-width: 150px;
+    height: auto;
+}
+/* LABEL AND INPUT */
+label{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+input{
+    background-color: var(--input-bg-color) !important;
+    border-radius: 10px;
+    border: 1px solid var(--border-color)!important;
+}
+/* // BUTTONS */
+.form--btn-1{
+    background-color: var(--secondary-bg-color);
+    border-radius: 15px;
+    color: var(--main-bg-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.20s ease-in-out;
+}
+.form--btn-2{
+    background-color: var(--main-bg-color);
+    border: 2px solid var(--secondary-bg-color)!important;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: 0.20s ease-in-out;
+}
+.form--btn-1:hover{
+    background-color: var(--secondary-text-color);
+    color: var(--main-bg-color);
+}
+.form--btn-2:hover{
+    background-color: var(--secondary-bg-color);
+    color: var(--main-bg-color);
+}
+/* FORM ANCHOR  */
+.form--a--1{
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration:dashed;
+}
+/* FORM HEADING */
+.heading--form--h2{
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.heading--form--h5{
+    color: var(--main-text-color);
+    font-weight: 600;
+    font-size: 1rem;
+}
