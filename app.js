@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  localStorage.clear();
   $("#nextBtn").click(function (e) {
     e.preventDefault();
     const email = $("#emailOrUsername").val();
@@ -35,6 +36,18 @@ $(document).ready(function () {
         localStorage.setItem("email", email);
         $("#step1").toggleClass("active");
         $("#step2").toggleClass("active");
+        let loginForm = $("#loginForm");
+        loginForm.prepend(`<div class="data-user" id="step3">
+            <div class="input-group">
+                <img src="./user.png" alt="user img" id="user_Img">
+            </div>
+            <div class="input-group">
+                <p class="text-muted w-100 m-0" id="currentEmail">
+                    ${email}
+                </p>
+                <a href="#" class="form--a--2" id="changeEmailLink">Change email or username</a>
+            </div>
+        </div>`);
       }
     }
 

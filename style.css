@@ -125,6 +125,25 @@ input{
 }
 
 
+
+.data-user{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+#user_Img{
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+}
+#currentEmail{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--main-text-color) !important;
+}
+
 /* @MEDIA */
 @media (max-width: 767px) {
     .form--body--col {
