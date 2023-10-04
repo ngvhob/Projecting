@@ -79,11 +79,11 @@ input{
     border-bottom: 1px dashed var(--secondary-text-color);
 }
 .form--a--2{
-    color: #6c757d;
+    color: #000000;
     font-weight: 600;
     font-size: 0.8rem;
     text-decoration: none;
-    border-bottom: 1px dashed #6c757d;
+    border-bottom: 1px dashed #000000;
 }
 .form--a--1:hover{
     color: var(--secondary-text-color);
@@ -91,9 +91,9 @@ input{
     border-bottom: 1px dashed var(--secondary-text-color);
 }
 .form--a--2:hover{
-    color: #6c757d;
+    color: #000000;
     text-decoration: none;
-    border-bottom: 1px dashed #6c757d;
+    border-bottom: 1px dashed #000000;
 }
 /* FORM HEADING */
 .heading--form--h2{
@@ -124,17 +124,16 @@ input{
     }
 }
 
-
-
+/* USER DATA */
 .data-user{
     display: grid;
     grid-template-columns: 10% 90%;
-    gap: 1rem;
+    gap: 2rem;
     justify-items: center;
     align-items: center;
 }
 #user_Img{
-    height: 30px;
+    height: 40px;
     width: auto;
     border-radius: 50%;
 }

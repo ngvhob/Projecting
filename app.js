@@ -37,7 +37,7 @@ $(document).ready(function () {
         $("#step1").toggleClass("active");
         $("#step2").toggleClass("active");
         let loginForm = $("#loginForm");
-        loginForm.prepend(`<div class="data-user" id="step3">
+        loginForm.prepend(`<div class="data-user mb-2" id="step3">
             <div class="input-group">
                 <img src="./user.png" alt="user img" id="user_Img">
             </div>
