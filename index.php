@@ -23,12 +23,16 @@
                         <h2 class="heading--form--h2">Log in</h2>
                     </div>
                     <form action="" method="post" class="w-75" id="loginForm">
-                        <div class="form-group">
+                        <div class="form-group active" id="step1">
                             <label for="emailOrUsername">Email or Username</label>
                             <input type="text" class="form-control" id="emailOrUsername" name="emailOrUsername"
                                 required>
                         </div>
-                        <button type="submit" class="btn btn-block mb-2 form--btn-1">Next</button>
+                        <div class="form-group" id="step2">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-block mb-2 form--btn-1" id="nextBtn">Next</button>
                         <div class="text-left mb-3">
                             <a href="#" class="form--a--1">Forgot your password?</a>
                         </div>
