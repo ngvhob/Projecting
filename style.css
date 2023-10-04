@@ -10,7 +10,7 @@
     --main-text-color: #000000;
     --secondary-text-color: #067382;
     --border-color: #afafaf;
-    --input-bg-color: #f5f5f5;
+    --input-bg-color: #ededed;
 }
 
 /* FORM CONTAINER MAIN */
@@ -60,6 +60,7 @@ input{
     font-weight: 700;
     font-size: 0.9rem;
     transition: 0.20s ease-in-out;
+    color: var(--secondary-bg-color);
 }
 .form--btn-1:hover{
     background-color: var(--secondary-text-color);
@@ -74,7 +75,25 @@ input{
     color: var(--secondary-text-color);
     font-weight: 600;
     font-size: 0.8rem;
-    text-decoration:dashed;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--secondary-text-color);
+}
+.form--a--2{
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-bottom: 1px dashed #6c757d;
+}
+.form--a--1:hover{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--secondary-text-color);
+}
+.form--a--2:hover{
+    color: #6c757d;
+    text-decoration: none;
+    border-bottom: 1px dashed #6c757d;
 }
 /* FORM HEADING */
 .heading--form--h2{
@@ -87,4 +106,17 @@ input{
     color: var(--main-text-color);
     font-weight: 600;
     font-size: 1rem;
+}
+
+/* @MEDIA */
+@media (max-width: 767px) {
+    .form--body--col {
+        height: inherit;
+    }
+    body{
+        overflow: hidden;
+    }
+    .form--body--row{
+        margin: 0px !important;
+    }
 }
